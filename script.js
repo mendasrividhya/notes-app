@@ -44,3 +44,8 @@ displayNotes();
 }
 
 displayNotes();
+function clearNotes(){
+notes = [];
+localStorage.setItem("notes", JSON.stringify(notes));
+displayNotes();
+}
